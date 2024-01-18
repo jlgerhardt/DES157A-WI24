@@ -1,0 +1,170 @@
+@font-face {
+    font-family: 'pixeloid_sansregular';
+    src: url('fonts/pixeloidsans-mlxmm-webfont.woff2') format('woff2'),
+         url('fonts/pixeloidsans-mlxmm-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'rubber_biscuitbold';
+  src: url('fonts/rubbbb__-webfont.woff2') format('woff2'),
+       url('fonts/rubbbb__-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'pixeled_english_fontregular';
+  src: url('fonts/pixeled_english_font-webfont.woff2') format('woff2'),
+       url('fonts/pixeled_english_font-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'senor_saturnoregular';
+  src: url('fonts/saturno-webfont.woff2') format('woff2'),
+       url('fonts/saturno-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'lunchtime_doubly_soregular';
+  src: url('fonts/lunchds-webfont.woff2') format('woff2'),
+       url('fonts/lunchds-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+ main {
+    width: 500px;
+    font-family: 'pixeloid_sansregular';
+    margin: auto;
+    margin-top: 100px;
+}
+
+ img {
+    z-index: 1;
+}
+
+ h1 {
+    padding: 15px 15px 0px 15px;
+    color: white;
+    font-size: 12pt;
+}
+
+ h2 {
+    font-size: 11pt;
+}
+
+  nav {
+    position: relative;
+    top: -365px;
+    z-index: 2;
+}
+
+  .dropbtn {
+    color: black;
+    padding: 0px 15px 0px 15px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 160px;
+    z-index: 3;
+    border-style: outset solid solid outset;
+    font-size: 10pt;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 10px;
+    text-decoration: none;
+    display: block;
+    transition: .5s;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: rgb(236, 236, 236);
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  article {
+    padding: 0px 20px 20px 20px;
+  }
+
+  #dec1 {
+    font-family: 'senor_saturnoregular';
+    animation: fade1 12s ease-in-out infinite;
+  }
+
+  #dec2 {
+    font-family: 'pixeled_english_fontregular';
+    animation: fade2 12s ease-in-out infinite;
+    padding-top: 15px;
+    font-size: 15pt;
+  }
+
+  #dec3 {
+    font-family: 'lunchtime_doubly_soregular';
+    animation: fade3 12s ease-in-out infinite;
+    padding-top: 15px;
+    font-size: 15pt;
+  }
+
+  #dec4 {
+    font-family: 'rubber_biscuitbold';
+    font-size: 20pt;
+    animation: fade4 12s ease-in-out infinite;
+  }
+
+@keyframes fade1 {
+  0%,100%  { opacity: 0 }
+  5% { opacity: 1 }
+  
+}
+
+@keyframes fade2 {
+  0%,100% { opacity: 0 }
+  35% { opacity: 1 }
+
+}
+
+@keyframes fade3 {
+  0%,100% { opacity: 0 }
+  55% { opacity: 1 }
+
+}
+
+@keyframes fade4 {
+  0%,100% { opacity: 0 }
+  75% { opacity: 1 }
+  80% { color: rgb(156, 0, 0) }
+
+}
+
+footer {
+  margin-top: -37px;
+  margin-left: 5px;
+  color: rgb(238, 238, 238);
+
+}
+
+#footerlink {
+  text-decoration: none;
+  color: rgb(238, 238, 238);
+}
