@@ -49,3 +49,8 @@ h3 {
     top: 10px;
     opacity: 0;
 }
+
+a {
+    text-decoration: none;
+    color: rgb(156, 0, 0)
+}
