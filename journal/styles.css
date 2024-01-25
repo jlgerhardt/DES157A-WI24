@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'pixeloid_sansregular';
+    src: url('/fonts/pixeloidsans-mlxmm-webfont.woff2') format('woff2'),
+         url('/fonts/pixeloidsans-mlxmm-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'pixeled_english_fontregular';
+    src: url('/fonts/pixeled_english_font-webfont.woff2') format('woff2'),
+         url('/fonts/pixeled_english_font-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+main {
+    width: 750px;
+    font-family: 'pixeloid_sansregular';
+    margin: auto;
+    margin-top: 100px;
+}
+
+article {
+    position: relative;
+    top: -540px;
+}
+
+h2 {
+    padding: 15px 15px 0px 15px;
+    color: white;
+    font-size: 12pt;
+}
+
+p {
+    padding: 0px 15px 0px 15px;
+}
+
+h3 {
+    font-family: 'pixeled_english_fontregular';
+    padding: 5px 5px 0px 5px;
+    font-size: 20pt;
+    text-align: center;
+}
+
+.exit {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    opacity: 0;
+}

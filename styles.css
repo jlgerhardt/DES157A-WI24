@@ -168,3 +168,11 @@ footer {
   text-decoration: none;
   color: rgb(238, 238, 238);
 }
+
+.exit {
+  position: absolute;
+  right: 10px;
+  top: 14px;
+  opacity: 0;
+}
+
