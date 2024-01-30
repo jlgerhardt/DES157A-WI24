@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        button {
+            width: 300px;
+            padding: 30px;
+            margin: auto;
+            display: block;
+            margin-top: 300px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <button onclick="randomColorFunc()">Randomize Background Color!</button>
+    
+    <script>
+ 
+        function colorChange() {
+            var choice = prompt("What is your favorite color? Red, blue, yellow, green, orange, or purple?","");
+            if (choice == "red" || choice == "Red") {
+                document.body.style.backgroundColor = "red";
+            }
+            else if (choice == "blue" || choice == "Blue"){
+                document.body.style.backgroundColor = "blue";
+            }
+
+            else if (choice == "yellow" || choice == "Yellow"){
+                document.body.style.backgroundColor = "yellow";
+            }
+
+            else if (choice == "green" || choice == "Green"){
+                document.body.style.backgroundColor = "green";
+            }
+
+            else if (choice == "orange" || choice == "Orange"){
+                document.body.style.backgroundColor = "orange";
+            }
+
+            else if (choice == "purple" || choice == "Purple"){
+                document.body.style.backgroundColor = "purple";
+            }
+
+            else {
+                console.log("ERROR: PLEASE ENTER A COLOR FROM THE LIST")
+            }
+
+            return choice;
+
+        }
+
+        function randomInt( min, max ){
+            return Math.floor( (max - min + 1) * Math.random() ) + min;
+        }
+
+        function randomColorFunc() {
+            var colors = ['red', 'blue', 'yellow', 'green', 'orange', 'purple'];
+            var randomColor = colors[ randomInt(0, colors.length-1) ];
+            console.log(randomColor);
+            document.body.style.backgroundColor = randomColor;
+        }
+
+        colorChange();
+
+    </script>
+    
+</body>
+</html>
