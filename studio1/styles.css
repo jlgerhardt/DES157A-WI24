@@ -1,3 +1,70 @@
-main form {
+
+@font-face {
+  font-family: 'perfect_dark_brkregular';
+  src: url('fonts/pdark-webfont.woff2') format('woff2'),
+       url('fonts/pdark-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+#myform {
   display: flex;
+}
+
+body {
+  font-family: 'Roboto Mono', monospace;
+  width: 450px;
+  margin: auto;
+  text-align: center;
+  margin-top: 100px;
+}
+
+div {
+  padding-top: 20px;
+}
+
+h1 {
+  font-family: 'perfect_dark_brkregular';
+  font-size: 30pt;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 15pt;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.showing {
+  visibility: showing;
+  opacity: 1;
+}
+
+#overlay {
+  position: absolute;
+  background-color: rgba(0,0,0,0.5);
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  transition-property: visibility, opacity;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+}
+
+#overlay article {
+  box-sizing: border-box;
+  background-color:#fff;
+  padding: 20px;
+  width: 50vw;
+  height: 80vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow-y: scroll;
 }
