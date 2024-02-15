@@ -30,6 +30,35 @@ article {
     top: -540px;
 }
 
+.journal4section {
+    width: 1550px;
+    margin: auto;
+    margin-top: 100px;
+    height: 1085px
+}
+
+
+.journal4article {
+    position: relative;
+    top: -1120px;
+    left: 400px;
+    width: 750px;
+}
+
+#img1 {
+    position: absolute;
+    top: 230px;
+    left: 730px;
+    font-weight: normal;
+}
+
+#img2 {
+    position: absolute;
+    bottom: 325px;
+    left: -380px;
+    font-weight: normal;
+}
+
 h2 {
     padding: 15px 15px 0px 15px;
     color: white;
@@ -58,4 +87,14 @@ h3 {
 a {
     text-decoration: none;
     color: rgb(156, 0, 0)
+}
+
+h4 {
+    padding: 10px 15px 0px 30px; 
+}
+
+figcaption {
+    width: 750px;
+    margin: auto;
+    color: rgb(230, 230, 230);
 }
