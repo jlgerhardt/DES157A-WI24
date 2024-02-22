@@ -2,6 +2,8 @@
   'use strict';
   console.log('reading js');
 
+
+  //script for the border when hovering
   const images = document.querySelectorAll('.hoverborder');
 
   images.forEach(function(image) {
@@ -15,6 +17,7 @@
 
   });
 
+  //callouts
   const thoughts = document.querySelector("#thoughts");
   const waves = document.querySelector("#waves");
   const sky = document.querySelector("#sky");
@@ -22,6 +25,7 @@
   const human = document.querySelector("#human");
   const untitled = document.querySelector("#untitled");
 
+  //overlay1
   thoughts.addEventListener("click", function(event){
     event.preventDefault();
     document.getElementById('overlay1').className = 'showing';
@@ -38,6 +42,7 @@
     }
   });
 
+  //overlay2
   waves.addEventListener("click", function(event){
     event.preventDefault();
     document.getElementById('overlay2').className = 'showing';
@@ -54,6 +59,7 @@
     }
   });
 
+  //overlay3
   sky.addEventListener("click", function(event){
     event.preventDefault();
     document.getElementById('overlay3').className = 'showing';
@@ -70,6 +76,7 @@
     }
   });
 
+  //overlay4
   turrel.addEventListener("click", function(event){
     event.preventDefault();
     document.getElementById('overlay4').className = 'showing';
@@ -86,6 +93,7 @@
     }
   });
 
+  //overlay5
   human.addEventListener("click", function(event){
     event.preventDefault();
     document.getElementById('overlay5').className = 'showing';
@@ -102,6 +110,7 @@
     }
   });
 
+  //overlay6
   untitled.addEventListener("click", function(event){
     event.preventDefault();
     document.getElementById('overlay6').className = 'showing';

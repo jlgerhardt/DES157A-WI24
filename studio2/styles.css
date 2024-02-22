@@ -151,7 +151,7 @@ footer {
   padding-top: 5px;
 }
 
-figcaption {
+.title {
   font-weight: 700;
 }
 
@@ -234,7 +234,6 @@ div h2 {
 }
 
 .close1, .close2, .close3, .close4, .close5, .close6 {
-  background-color: none;
   cursor: pointer;
   font-size: 18pt;
   font-weight: 600;
