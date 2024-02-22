@@ -264,6 +264,10 @@ div h2 {
     color: rgb(87, 87, 87);
   }
 
+  main {
+    height: 70vh;
+  }
+
   div h1 {
     padding-bottom: 5px;
   }
@@ -290,6 +294,18 @@ div h2 {
   
   #untitled {
     width: 130px;
+  }
+
+  .skyspace {
+    padding-top: 40px;
+  }
+
+  figure img {
+    width: 500px;
+  }
+
+  .long {
+    width: 350px;
   }
 }
 
