@@ -86,7 +86,7 @@ h1 {
 
 main {
   width: 1100px;
-  height: 750px;
+  height: 60vh;
   border-block: 2px solid;
   display: flex;
   flex-direction: column;
@@ -167,7 +167,7 @@ footer {
 
 #overlay1, #overlay2, #overlay3, #overlay4, #overlay5, #overlay6 {
   position: absolute;
-  /* background-color: rgba(0,0,0,0.5); */
+  background-color: rgba(0,0,0,0.5);
   top: 0;
   left: 0;
   width: 100vw;
