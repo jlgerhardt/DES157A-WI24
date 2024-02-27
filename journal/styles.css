@@ -16,6 +16,8 @@
 
 body {
     font-family: 'pixeloid_sansregular';
+    width: 1550px;
+    margin: auto;
 }
 
 section {
