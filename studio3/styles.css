@@ -9,11 +9,7 @@ button {
     padding: 10px;
 }
 
-div {
-    padding: 20px;
-}
-
-#gamecontrol, #score {
+#gamecontrol, #p1score, #p2score {
     background-color: aliceblue;
 }
 

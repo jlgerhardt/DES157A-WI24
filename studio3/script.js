@@ -28,6 +28,8 @@
     const game = document.querySelector('#game');
     const score = document.querySelector('#score');
     const actionArea = document.querySelector('#actions');
+    const p1score = document.querySelector('#p1score');
+    const p2score = document.querySelector('#p2score');
 
     const gameData = {
         dice: ['images/1die.jpg', 'images/2die.jpg', 'images/3die.jpg', 'images/4die.jpg', 'images/5die.jpg', 'images/6die.jpg'],
@@ -112,8 +114,9 @@
         }
 
         function showCurrentScore() {
-            score.innerHTML = `<p><strong>${gameData.players[0]} has
-            ${gameData.score[0]} points! </strong><br><strong>${gameData.players[1]} has
+            p1score.innerHTML = `<p><strong>${gameData.players[0]} has
+            ${gameData.score[0]} points! </strong></p>`;
+            p2score.innerHTML = `<p><strong>${gameData.players[1]} has
             ${gameData.score[1]} points! </strong></p>`;
         }
     }
