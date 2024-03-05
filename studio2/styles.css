@@ -193,16 +193,24 @@ footer {
   left: 50%;
   transform: translate(-50%, -50%);
   margin: auto;
-}
-
-.information {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+}
+
+figure {
+  flex: 1;
 }
 
 aside {
   overflow-y: scroll;
   padding: 20px;
+  flex: 1;
+
+}
+
+.long {
+  padding-left: 50px;
 }
 
 h3 {
@@ -216,10 +224,6 @@ p {
   font-family: "Inter", sans-serif;
   padding-bottom: 20px;
   padding-left: 10px;
-}
-
-.skyspace {
-  padding-top: 60px;
 }
 
 .arttitle {
@@ -298,15 +302,17 @@ div h2 {
   }
 
   .skyspace {
-    padding-top: 40px;
+    padding-top: 20px;
   }
 
-  figure img {
-    width: 500px;
-  }
-
-  .long {
-    width: 350px;
+  #overlay1 article, #overlay2 article, #overlay3 article, #overlay4 article, #overlay5 article, #overlay6 article {
+    width: 68vw;
+    height: 67vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
   }
 }
 

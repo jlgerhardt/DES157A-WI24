@@ -127,11 +127,11 @@
     }
   });
 
-      // Event listener for the back button to navigate to the landing page
-    images.addEventListener("click", function(e) {
-        e.preventDefault();
-        document.querySelectorAll("main").className = "hidden";
-    });
+    //   // Event listener for the back button to navigate to the landing page
+    // images.addEventListener("click", function(e) {
+    //     e.preventDefault();
+    //     document.querySelectorAll("main").className = "hidden";
+    // });
 
     // // Event listener for clicking on the main story link to go to full page
     // const clickTwenty = document.querySelector("#twenty");
