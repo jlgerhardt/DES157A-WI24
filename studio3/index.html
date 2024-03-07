@@ -6,32 +6,35 @@
     <title>Game of PIG</title>
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
 	<link href="styles.css" rel="stylesheet">
-    <script src="script.js" defer></script>
+    <script src="script1.js" defer></script>
 </head>
 <body>
 
-    <header>
-        <h1>Game of PIG</h1>
-        <p>There are two players. The player whose turn it is rolls the dice. The total of the roll is added to the current player's score, unless either die comes up as a "one". If this happens, this player's turn is over, and it is the other player’s turn. After each roll, the current player can either roll again, (assuming a "one" was not rolled) or if the current player feels that luck is running thin, they can pass to the other player. The first player to get 30 points or higher wins.</p> 
-        <p>Oh, and if you roll two "ones" (snake eyes), your current score gets zeroed out. So don’t do that.</p>
-    </header>
+    <div id="overlay" class="showing">
+        <article>
+            <img src="images/overlay.png" alt="overlayrules" width="500">
+            <a class="close">&#60; CONTINUE &#62;</a>
+        </article>
+    </div>
 
     <main>
         <div id="gamecontrol">
             <h2>Start a Game</h2>
-            <button id="startgame">Randomly Pick the First Player, and Start the Game</button>
+            <a id="startgame">&#60; START &#62;</a>
         </div>
-    
-        <!-- <div id="score"></div> -->
-    
-        <div id="p1score"></div>
-        <div id="p2score"></div>
-    
-        <div id="game"></div>
+
+        <section>
+            <div id="p1score"></div>
+            <div id="p2score"></div>
+        </section>
+
+        <div id="instructions"></div>
+        <div class="actions" id="actions"></div>
 
     </main>
 
-    <div class="actions" id="actions"></div>
-    
+    <div id="game1"></div>
+    <div id="game2"></div>
+
 </body>
 </html>
