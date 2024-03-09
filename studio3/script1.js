@@ -177,6 +177,7 @@
         }
     }
 
+    // code altered to display to different scores
     function showCurrentScore() {
         p1score.innerHTML = `<p class="p1"><strong>${gameData.players[0]}</p><p class="score">${gameData.score[0]}</strong></p>`;
         p2score.innerHTML = `<p class="p2"><strong>${gameData.players[1]}</p><p class="score">${gameData.score[1]}</strong></p>`;
