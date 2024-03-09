@@ -20,11 +20,19 @@
     const gamewin = new Audio('sounds/gamewin.mp3');
     const damncrap = new Audio('sounds/damncrap.mp3');
     const tarnation = new Audio('sounds/tarnation.mp3');
+    const bgnoise = new Audio('sounds/bgnoise.mp3');
+
+    window.addEventListener('load', function () {
+        bgnoise.play();
+        bgnoise.loop=true;
+    });
 
 
     const gameData = {
-        reddice: ['dice/blue1die.png', 'dice/blue2die.png', 'dice/blue3die.png', 'dice/blue5die.png', 'dice/blue6die.png', ],
-        bluedice: ['dice/red1die.png', 'dice/red2die.png', 'dice/red3die.png', 'dice/red5die.png', 'dice/red6die.png', ],
+        bluedice: [ 'dice/blue1die.png', 'dice/blue2die.png', 'dice/blue3die.png', 'dice/blue4die.png', 'dice/blue5die.png', 'dice/blue6die.png', ],
+        reddice: [ 'dice/red1die.png', 'dice/red2die.png', 'dice/red3die.png', 'dice/red4die.png', 'dice/red5die.png', 'dice/red6die.png', ],
+        // dice: ['images/1die.jpg', 'images/2die.jpg', 'images/3die.jpg', 
+        // 'images/4die.jpg', 'images/5die.jpg', 'images/6die.jpg'],
         players: ['PLAYER 1', 'PLAYER 2'],
         score: [0, 0],
         roll1: 0,
@@ -88,12 +96,13 @@
         gameData.roll1 = Math.floor(Math.random() * 6) + 1;
         gameData.roll2 = Math.floor(Math.random() * 6) + 1;
         const currentPlayerArea = gameData.index === 0 ? game1 : game2;
-        if (gameData.index === 1) {
+        // if statement to use different colored dice
+        if (gameData.index === 0) {
             currentPlayerArea.innerHTML = `<img src="${gameData.reddice[gameData.roll1-1]}"> <img src="${gameData.reddice[gameData.roll2-1]}">`;
         } else {
             currentPlayerArea.innerHTML = `<img src="${gameData.bluedice[gameData.roll1-1]}"> <img src="${gameData.bluedice[gameData.roll2-1]}">`;
         }
-        // currentPlayerArea.innerHTML = `<img src="${gameData.dice[gameData.roll1-1]}"> <img src="${gameData.dice[gameData.roll2-1]}">`;
+        // currentPlayerArea.innerHTML = `<img src="${gameData.reddice[gameData.roll1-1]}"> <img src="${gameData.reddice[gameData.roll2-1]}">`;
         gameData.rollSum = gameData.roll1 + gameData.roll2;
 
         handleDiceOutcome();
