@@ -1,0 +1,178 @@
+@font-face {
+    font-family: 'notepenmedium';
+    src: url('fonts/notepen-webfont.woff2') format('woff2'),
+         url('fonts/notepen-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+ h1, h2, h3, p, nav ul {
+    margin: 0;
+    padding: 0;
+   /* this removes default margin/padding 
+    from these elements. You might want to add
+    a few others in here.*/
+   }
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+   /* this sets images as block elements
+    and makes sure they don't bust out of 
+    their containers, and that they maintain
+    their aspect ratio. */
+   }
+nav ul {
+    list-style-type: none;
+    text-decoration: none;
+   /* gets rid of bullets & underline */
+   }
+* {
+    box-sizing: border-box;
+       /* You *might* want to convert all elements
+   to box-sizing: border box */
+   }
+   
+
+body {
+    font-size: 20pt;
+    font-family: Arial;
+    color: rgb(141, 0, 0);
+    padding: 50px;
+    line-height: 1.5em;
+    background-image: url(images/background.png);
+    background-repeat: no-repeat;
+    font-family: 'notepenmedium';
+    position: relative;
+}
+
+a, p {
+    transition: .3s;
+    font-size: 24pt;
+}
+
+a:hover {
+    color: red;
+    cursor: pointer;
+}
+ 
+p:hover {
+    cursor: default;
+}
+
+main {
+    padding-top: 100px;
+    width: 350px;
+    margin: auto;
+    text-align: center;
+}
+
+button { 
+    padding: 10px;
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+}
+
+#game1 {
+    position: absolute;
+    /* border: 2px red solid; */
+    width: 300px;
+    left: 100px;
+    top: 420px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#game2 {
+    position: absolute;
+    /* border: 2px blue solid; */
+    width: 300px;
+    right: 70px;
+    top: 420px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+  }
+  
+.showing {
+    visibility: visible;
+    opacity: 1;
+}
+  
+#overlay {
+    position: absolute;
+    /* background-color: rgba(0,0,0,0.5); */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    transition-property: visibility, opacity;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+  
+#overlay article {
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+.close {
+    position: absolute;
+    bottom: 15%;
+    left: 34%;
+}
+
+#quit {
+    position: absolute;
+    top: 153%;
+    left: 36%;
+}
+
+#rules {
+    position: absolute;
+    top: 153%;
+    right: 36%;
+}
+
+h2 {
+    padding-bottom: 20px;
+}
+
+.score {
+    font-size: 40pt;
+    padding: 10px;
+    padding-bottom: 40px;
+}
+
+.startgamebtn {
+    padding-top: 100px;
+}
+
+#chips1 {
+    position: absolute;
+    /* border: 2px red solid; */
+    width: 300px;
+    left: 100px;
+    top: 600px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#chips2 {
+    position: absolute;
+    /* border: 2px blue solid; */
+    width: 300px;
+    right: 70px;
+    top: 600px;
+    display: flex;
+    justify-content: space-evenly;
+}

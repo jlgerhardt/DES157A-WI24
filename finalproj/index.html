@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+	<link href="styles.css" rel="stylesheet">
+    <script src="script1.js" defer></script>
+    <title>Game of PIG</title>
+</head>
+<body>
+
+    <div id="overlay" class="showing">
+        <article>
+            <img src="images/overlay.png" alt="overlayrules" width="500">
+            <a class="close">&#60; CONTINUE &#62;</a>
+        </article>
+    </div>
+
+    <main>
+        <div id="gamecontrol">
+            <h2>Place your bet</h2>
+  
+            <div id="bet">
+                <p><strong>TOTAL BET</strong></p>
+                <p><strong>$ 10</strong></p>
+            </div>
+
+            <a class="startgamebtn" id="startgamebtn">&#60; START &#62;</a>
+        </div>
+
+        <section>
+            <div id="p1score"></div>
+            <div id="p2score"></div>
+        </section>
+
+        <div id="instructions"></div>
+        <div class="actions" id="actions"></div>
+
+    </main>
+
+    <div id="game1"></div>
+    <div id="game2"></div>
+
+    <div id="chips1"><img src="chips/3chipbright.png" width="300" alt="chips1"></div>
+    <div id="chips2"><img src="chips/3chipdark.png" width="300" alt="chips2"></div>
+
+</body>
+</html>
